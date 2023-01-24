@@ -1,29 +1,35 @@
 {
   "menu_list": [
     {
-      "name": "Home",
-      "id": "home",
-      "href": "home"
-    },
-    {
       "name": "Collection",
       "id": "collection",
       "href": "collection"
     },
     {
-      "name": "Roadmap",
-      "id": "roadmap",
-      "href": "roadmap"
+      "name": "Tokenomics",
+      "id": "tokenomics",
+      "href": "tokenomics"
     },
+
     {
       "name": "Rarity&Utility",
       "id": "rarity",
       "href": "rarity"
     },
     {
-      "name": "Connect Wallet",
-      "id": "connect",
-      "href": "connect"
+      "name": "Team",
+      "id": "team",
+      "href": "team"
+    },
+    {
+      "name": "FAQ",
+      "id": "faq",
+      "href": "faq"
+    },
+    {
+      "name": "Whitelist Lottery",
+      "id": "whitelist",
+      "href": "whitelist"
     }
   ],
   "menusub_list": [
