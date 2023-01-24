@@ -1,0 +1,132 @@
+.roadmap {
+  &__textbox {
+    display: flex;
+    align-items: center;
+  }
+  &__presentation {
+    // border-radius: 12px;
+    position: relative;
+
+    display: flex;
+
+    // overflow: hidden;
+
+    min-height: 430px;
+    padding: 15px;
+    // &::after {
+    position: relative;
+    z-index: 1;
+    //   position: absolute;
+    //   top: -7px;
+    //   right: -7px;
+    //   bottom: -7px;
+    //   left: -7px;
+
+    //   content: '';
+
+    //   border: dashed 10px $color_light;
+    // }
+    @include bp994-block() {
+    }
+
+    @include bp480-block() {
+      min-height: 550px;
+    }
+
+    @include bp768-block {
+      min-height: 630px;
+    }
+
+    @include bp994-block() {
+      min-height: 100%;
+    }
+  }
+  &__imgbox {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    @include bp994-block() {
+      min-height: 600px;
+    }
+  }
+  &__img-anim {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    &_active {
+      opacity: 1;
+    }
+    opacity: 0;
+    @include ts(opacity);
+  }
+  &__img-burn {
+    position: absolute;
+    bottom: -120px;
+    left: 50%;
+
+    transform: translate(-50%, 0) scale(0.6);
+    @include bp480-block() {
+      transform: translate(-50%, 0) scale(1);
+    }
+    @include bp768-block() {
+      bottom: 0;
+
+      transform: translate(-50%, 0) scale(1.6);
+    }
+    @include bp994-block() {
+      bottom: -20px;
+
+      transform: translate(-50%, 0) scale(1.3);
+    }
+  }
+
+  &__buttonbox {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 70px;
+    &:after {
+      position: absolute;
+      bottom: calc(50% - 70px);
+
+      width: 140px;
+      height: 140px;
+
+      content: '';
+      transform: translateY(50%);
+      pointer-events: none;
+
+      background: url('/img/regular/deco/deco__cursor.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      @include bp994-block() {
+        // bottom: 30px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.anim {
+  &__img {
+    // visibility: hidden;
+    position: absolute;
+
+    opacity: 0;
+    &_visible {
+      opacity: 1;
+      // visibility: visible;
+    }
+  }
+}

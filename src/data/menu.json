@@ -1,0 +1,56 @@
+{
+  "menu_list": [
+    {
+      "name": "Home",
+      "id": "home",
+      "href": "home"
+    },
+    {
+      "name": "Collection",
+      "id": "collection",
+      "href": "collection"
+    },
+    {
+      "name": "Roadmap",
+      "id": "roadmap",
+      "href": "roadmap"
+    },
+    {
+      "name": "Rarity&Utility",
+      "id": "rarity",
+      "href": "rarity"
+    },
+    {
+      "name": "Connect Wallet",
+      "id": "connect",
+      "href": "connect"
+    }
+  ],
+  "menusub_list": [
+    {
+      "name": "Home",
+      "id": "home",
+      "href": "home"
+    },
+    {
+      "name": "Collection",
+      "id": "collection",
+      "href": "collection"
+    },
+    {
+      "name": "Mint button",
+      "id": "button",
+      "href": "home"
+    },
+    {
+      "name": "Roadmap",
+      "id": "roadmap",
+      "href": "roadmap"
+    },
+    {
+      "name": "Rarity&Utility",
+      "id": "rarity",
+      "href": "rarity"
+    }
+  ]
+}

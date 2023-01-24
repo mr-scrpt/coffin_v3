@@ -1,0 +1,34 @@
+<div class="header page__header" id="home">
+    <div class="header__inner layout__flat layout__offset">
+        <div class="header__soundbar player">
+            <div class="header__soundcontrol player__controller">
+                <div class="icon icon_sound icon_dashed header__icon"></div>
+            </div>
+            <audio class="header__player palyer__box" controls autoplay>
+                <!-- <source src="/file/song.ogg" type="audio/ogg"> -->
+                <!-- <source src="/file/song.mp3" type="audio/mpeg"> -->
+                <!-- <source src="/file/song_1.mp3" type="audio/mpeg"> -->
+                <!-- <source src="/file/song_2.mp3" type="audio/mpeg"> -->
+                <!-- <source src="/file/song_3.mp3" type="audio/mpeg"> -->
+                <!-- <source src="/file/song_4.mp3" type="audio/mpeg"> -->
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        {%
+        set inject = {
+        parentClass: "header__menu"
+        }
+        %}
+        {% include "component/menu/menu.njk" %}
+        <div class="header__social social">
+            <div class="social__list">
+                <div class="social__item">
+                    <div class="icon icon_twitter header__icon"></div>
+                </div>
+                <div class="social__item">
+                    <div class="icon icon_discord header__icon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

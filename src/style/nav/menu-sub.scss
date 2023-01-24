@@ -1,0 +1,33 @@
+.menu-sub {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    @include bp994-block() {
+      gap: 15px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    margin-bottom: 15px;
+    line-height: 16px;
+
+    @include bp994-block() {
+      width: auto;
+      margin: 0;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+
+    color: $color_light;
+
+    font-size: 16px;
+    line-height: 16px;
+    @include bp1440-block() {
+      padding: 5px 40px;
+    }
+  }
+}

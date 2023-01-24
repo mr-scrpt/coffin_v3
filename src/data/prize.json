@@ -1,0 +1,48 @@
+{
+  "prize_list": [
+    {
+      "text": "Common",
+      "coffin": ["common"],
+      "benefit_title": "4,000 NFTs",
+      "benefit_text": "give a personal video greeting from the coffin dancers",
+      "img": "common",
+      "class_active": "active"
+    },
+    {
+      "text": "Uncommon",
+      "coffin": ["uncommon", "uncommon"],
+      "benefit_title": "500 NFTs ",
+      "benefit_text": "give a 5-10 minute Zoom with Benjamin Aidoo",
+      "img": "uncommon"
+    },
+    {
+      "text": "Rare",
+      "coffin": ["rare", "rare", "rare"],
+      "benefit_title": "300 NFTs ",
+      "benefit_text": "give free a memorial service in Ghana",
+      "img": "rare"
+    },
+    {
+      "text": "Epic",
+      "coffin": ["epic", "epic", "epic", "epic"],
+      "benefit_title": "100 NFTs",
+      "benefit_text": "give a free memorial service all over the world",
+
+      "img": "epic"
+    },
+    {
+      "text": "Legendary",
+      "coffin": [
+        "legendary",
+        "legendary",
+        "legendary",
+        "legendary",
+        "legendary"
+      ],
+      "benefit_title": "100 NFTs",
+      "benefit_text": "give free performance at a party or any other event all over the world",
+
+      "img": "legendary"
+    }
+  ]
+}

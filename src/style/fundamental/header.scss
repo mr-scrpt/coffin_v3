@@ -1,0 +1,57 @@
+.header {
+  &__inner {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__soundbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 10px;
+    margin-left: auto;
+  }
+
+  &__player {
+    display: none;
+  }
+
+  &__soundcontrol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    border: 1px solid $color_light;
+    border-radius: 50%;
+    background-color: $color_light;
+    @include ts(background-color);
+
+    &_stoped {
+      background-color: transparent;
+
+      & .header__icon.icon.icon_sound {
+        background-color: $color_light;
+      }
+    }
+  }
+
+  &__menu {
+    order: -1;
+    @include bp994-block() {
+      flex-grow: 1;
+      order: 0;
+    }
+  }
+
+  &__icon {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,26 @@
+.title {
+  &__text {
+    text-transform: uppercase;
+
+    color: $color_light;
+
+    font-family: 'Benzin', sans-serif;
+    // display: block;
+  }
+}
+
+.title_main {
+  & .title__text {
+    font-size: 40px;
+    line-height: 54px;
+    @include bp1100-block() {
+      font-size: 110px;
+      line-height: 130px;
+    }
+  }
+}
+
+.title_sub {
+  & .title__text {
+  }
+}

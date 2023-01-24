@@ -1,0 +1,286 @@
+.deco {
+  &__sh {
+  }
+
+  &__line-cros {
+    text-decoration: line-through;
+  }
+  &__buttonbox {
+    // display: inline-block;
+    // display: flex;
+    display: inline-flex;
+    padding: 15px 20px;
+
+    border-radius: 6px;
+
+    background-color: $color_light;
+  }
+
+  &__grid {
+    background-image: linear-gradient(
+        to right,
+        $color_blue 2px,
+        transparent 2px
+      ),
+      linear-gradient(to bottom, $color_blue 2px, transparent 2px);
+    background-size: 50px 50px;
+
+    @include bp1440-block() {
+      transform: translateX(-50%);
+
+      background-size: 90px 90px;
+    }
+  }
+
+  &__guys {
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+
+      width: 280px;
+      height: 310px;
+
+      content: '';
+      transform: translate(-50%, 100%);
+
+      background: url('/img/regular/deco/deco__guys.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      @include bp994-block() {
+        right: 0;
+        left: auto;
+
+        width: 400px;
+        height: 470px;
+
+        transform: translate(-100px, 100px);
+      }
+
+      @include bp1440-block() {
+        width: 580px;
+        height: 700px;
+      }
+    }
+  }
+
+  &__planet {
+    position: relative;
+    // background-position: 0 100%;
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+
+      width: 620px;
+      height: 620px;
+
+      content: '';
+      transform: translateX(-50%);
+
+      background: url('/img/regular/deco/deco__planet.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include bp994-block() {
+        right: 0;
+
+        left: auto;
+        // transform: translateY(-700px);
+        width: 900px;
+        height: 900px;
+
+        transform: translate(100px, -400px);
+      }
+      @include bp1440-block() {
+        width: 1300px;
+        height: 1300px;
+
+        transform: translate(200px, -550px);
+      }
+    }
+
+    &_rarity {
+      &::after {
+        @include bp994-block() {
+          right: 0;
+
+          left: auto;
+          // transform: translateY(-700px);
+          width: 900px;
+          height: 900px;
+
+          transform: translate(100px, -300px);
+        }
+        @include bp1440-block() {
+          width: 1100px;
+          height: 1100px;
+
+          transform: translate(180px, -370px);
+        }
+      }
+    }
+  }
+
+  &__spot {
+    background-color: $color_dark;
+
+    &_banner_first {
+      background: radial-gradient(
+        circle at 70% 30%,
+        rgba(0, 0, 0, 0.1) 0%,
+        rgba(0, 0, 0, 0.6) 20%,
+        rgba(0, 0, 0, 1) 40%
+      );
+    }
+
+    &_banner_second {
+      background: radial-gradient(
+        circle at 60% 35%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 20%,
+        rgba(0, 0, 0, 1) 40%
+      );
+    }
+
+    &__collection {
+      background: radial-gradient(
+        circle at 50% 60%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 1) 40%
+      );
+    }
+    &__roadmap {
+      &_1 {
+        background: radial-gradient(
+          circle at 55% 55%,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 30%,
+          rgba(0, 0, 0, 1) 40%
+        );
+      }
+      &_2 {
+        background: radial-gradient(
+          circle at 40% 60%,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 30%,
+          rgba(0, 0, 0, 1) 40%
+        );
+      }
+      &_3 {
+        background: radial-gradient(
+          circle at 60% 70%,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 30%,
+          rgba(0, 0, 0, 1) 40%
+        );
+      }
+      &_4 {
+        background: radial-gradient(
+          circle at 50% 68%,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 30%,
+          rgba(0, 0, 0, 1) 40%
+        );
+      }
+    }
+
+    &__rarity {
+      background: radial-gradient(
+        circle at 60% 45%,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 30%,
+        rgba(0, 0, 0, 1) 40%
+      );
+    }
+
+    @include bp994-block() {
+      &_banner_second {
+        background: radial-gradient(
+          circle at 50% 45%,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 40%,
+          rgba(0, 0, 0, 1) 50%
+        );
+      }
+
+      &__collection {
+        background: radial-gradient(
+          circle at 70% 60%,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 30%,
+          rgba(0, 0, 0, 1) 40%
+        );
+      }
+
+      &__roadmap {
+        &_3 {
+          background: radial-gradient(
+            circle at 70% 70%,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.5) 20%,
+            rgba(0, 0, 0, 1) 30%
+          );
+        }
+      }
+    }
+  }
+
+  &__animation-shake {
+    position: relative;
+    z-index: 1;
+
+    animation: shake 6s ease-in-out infinite;
+  }
+
+  &__animation-glow {
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 0px;
+      height: 0px;
+
+      content: '';
+      transition: box-shadow 12s ease-out;
+      animation: spin 4s linear infinite;
+
+      border-radius: 50%;
+      box-shadow: 0 0 50px 40px red, 0 0 100px 50px red;
+    }
+    &::before {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+
+      width: 0px;
+      height: 0px;
+
+      content: '';
+      transition: box-shadow 6s ease-out;
+      animation: spin 4s linear infinite;
+
+      border-radius: 30%;
+      box-shadow: 0 0 30px 10px red, 0 0 40px 10px red;
+    }
+    @include bp768-block() {
+      padding-right: 20%;
+      padding-left: 20%;
+    }
+    @include bp994-block() {
+      padding-right: 0;
+      padding-left: 0;
+      &::after {
+        box-shadow: 0 0 150px 100px red, 0 0 250px 150px red;
+      }
+      &::before {
+        box-shadow: 0 0 40px 20px red, 0 0 100px 50px red;
+      }
+    }
+  }
+}

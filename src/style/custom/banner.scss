@@ -1,0 +1,28 @@
+.banner {
+  &__inner {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+  }
+
+  &__cell {
+    width: 100%;
+    @include bp994-block() {
+      width: 50%;
+    }
+    // height: 800px;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+
+    @include bp994-block() {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__text {
+    max-width: 500px;
+  }
+}

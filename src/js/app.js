@@ -1,0 +1,7 @@
+import './module/adaptive.js'
+import './module/accordion.js'
+import './module/rarity.js'
+import './module/loop.js'
+import './module/menuScroll.js'
+import './module/sound.js'
+import './module/welcome.js'

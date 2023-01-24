@@ -1,0 +1,109 @@
+.prize {
+  font-family: 'NeueMachina', sans-serif;
+
+  &__inner {
+    position: relative;
+
+    display: flex;
+    overflow: hidden;
+
+    padding: 35px 10px;
+
+    border: 3px solid rgba($color_blue, 0.3);
+    border-radius: 8px;
+
+    background-color: $color_dark;
+    @include bp994-block() {
+      padding: 15px;
+
+      border: 12px solid rgba($color_blue, 0.3);
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__coffin-list {
+    display: flex;
+
+    width: 100%;
+  }
+
+  &__icon {
+    width: 30px;
+    height: 30px;
+
+    @include bp1100-block() {
+      width: 53px;
+      height: 53px;
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    font-size: 24px;
+    @include bp994-block() {
+    }
+  }
+
+  &__benefit {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+
+    transform: translateY(-100%);
+
+    opacity: 0;
+    background-color: $color_dark;
+
+    @include ts(transform, opacity);
+
+    @include bp1100-block() {
+      padding: 15px;
+    }
+  }
+
+  &__benefit-title {
+    width: 100%;
+
+    font-size: 20px;
+    @include bp1440-block() {
+      font-size: 30px;
+    }
+  }
+
+  &__benefit-text {
+    width: 100%;
+
+    font-size: 16px;
+    @include bp1440-block() {
+      font-size: 20px;
+    }
+  }
+}
+
+.prize.prize_active {
+  .prize__benefit {
+    transform: translateY(0);
+
+    // @include ts(transform);
+    opacity: 1;
+  }
+  .prize__inner {
+    border-color: #091b31;
+  }
+}

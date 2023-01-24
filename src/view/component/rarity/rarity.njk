@@ -1,0 +1,33 @@
+<div class="rarity">
+    <div class="rarity__inner deco__planet deco__planet_rarity">
+        <div class="rarity__prizebox">
+            {% for item in prize.prize_list %}
+                <div class="rarity__prizespan prize{{ ' prize_active' if item.class_active else '' }}"
+                     data-id="{{ loop.index }}">
+                    <div class="prize__inner">
+                        <div class="prize__content">
+                            <div class="prize__coffin-list">
+                                {% for img in item.coffin %}<div class="prize__icon icon icon_coffin_{{ img }}"></div>{% endfor %}
+                            </div>
+                            <div class="prize__text">{{ item.text }}</div>
+                        </div>
+                        <div class="prize__benefit">
+                            <div class="prize__benefit-title">{{ item.benefit_title }}</div>
+                            <div class="prize__benefit-text">{{ item.benefit_text }}</div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="rarity__presentation">
+            <div class="rarity__imgbox">
+                {% for item in prize.prize_list %}
+                    <img src="/img/regular/coffin/coffin_{{ item.img }}.png"
+                         alt="{{ item.img }}"
+                         data-id="{{ loop.index }}"
+                         class="img rarity__img{{ ' rarity__img_active' if item.class_active else '' }}">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

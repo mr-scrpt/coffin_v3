@@ -1,0 +1,16 @@
+<section class="section page__section {{ inject.sectionClass }}"
+         id="{{ inject.scrollTo }}">
+    <div class="section__inner {{ inject.sectionInner }}">
+        <div class="layout__{{ inject.wrapper }} {{ inject.sectionBox }}">
+            {% if inject.sectionTitle %}
+                <div class="section__title title title_main">
+                    <div class="title__text">{{ inject.sectionTitle }}</div>
+                </div>
+            {% endif %}
+            <div class="section__content">
+                {% block section %}
+                {% endblock section %}
+            </div>
+        </div>
+    </div>
+</section>

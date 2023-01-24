@@ -1,0 +1,15 @@
+.paragraph {
+  &__item {
+    // width: 100%;
+    // display: block;
+    margin-bottom: 25px;
+    letter-spacing: 0.02em;
+    @include bp994-block() {
+      margin-bottom: 50px;
+    }
+    &_min {
+      font-size: 22px;
+      line-height: 28px;
+    }
+  }
+}

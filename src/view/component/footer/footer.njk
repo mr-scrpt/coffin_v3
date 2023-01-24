@@ -1,0 +1,17 @@
+<footer class="footer page__footer">
+    <div class="footer__inner layout__flat layout__offset">
+        <div class="footer__copyright">
+            <div class="footer__copyright-line">© 2022 Coffin</div>
+            <div class="footer__copyright-line">All rights reserved.</div>
+        </div>
+        <div class="footer__menu menu-sub">
+            <nav class="menu-sub__inner">
+                {% for item in menu.menusub_list %}
+                    <div class="menu-sub__item">
+                        <a href="#{{ item.href }}" class="menu-sub__link link to">{{ item.name }}</a>
+                    </div>
+                {% endfor %}
+            </nav>
+        </div>
+    </div>
+</footer>

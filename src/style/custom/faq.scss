@@ -1,0 +1,76 @@
+/***** RESETS *****/
+
+.faq__inner {
+  margin-bottom: 40px;
+
+  font-family: 'NeueMachina', sans-serif;
+  @include bp994-block() {
+    margin-bottom: 80px;
+  }
+}
+.faq {
+  &__item {
+    padding: 20px 5px;
+    &:nth-child(odd) {
+      background-color: $color_gray;
+    }
+    @include bp994-block() {
+      padding: 15px 25px;
+    }
+  }
+  &__q {
+    position: relative;
+
+    padding-top: 35px;
+    padding-bottom: 25px;
+
+    font-size: 18px;
+    font-weight: 700;
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      width: 25px;
+      height: 20px;
+
+      content: '';
+
+      border: 3px solid $color_light;
+
+      border-radius: 5px;
+      background-color: $color_light;
+      background-image: url('/img/regular/icon/icon_plus.svg');
+      background-repeat: no-repeat;
+      background-position: 50%;
+      background-size: contain;
+    }
+
+    @include bp994-block() {
+      font-size: 36px;
+    }
+  }
+  &__a {
+    // border-top: 1px solid $color_light;
+    display: none;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    font-size: 14px;
+
+    @include bp994-block() {
+      font-size: 20px;
+    }
+  }
+}
+
+.faq {
+  &__item_open {
+    .faq__q {
+      &::after {
+        background-image: url('/img/regular/icon/icon_minus.svg');
+      }
+    }
+  }
+}

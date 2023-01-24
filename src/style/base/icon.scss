@@ -1,0 +1,82 @@
+.icon {
+  display: inline-block;
+
+  min-width: 1em;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+  mask-position: 50%;
+  mask-repeat: no-repeat;
+}
+.icon:empty:after {
+  visibility: hidden;
+
+  content: '\00A0';
+}
+
+.icon > img,
+.icon > svg {
+  margin: -5.15em 0 -5em;
+
+  vertical-align: middle;
+}
+/* Icon svg example */
+/* Не задаются размеры - блок icon не используется отдельно */
+/* Используется в качестве вспомогательного, декоративного элемента */
+/* Размеры получает через блок родителя, например button */
+
+.icon.icon_sound {
+  // background-image: url('/img/regular/icon/icon_sound.svg');
+  mask-image: url('../img/regular/icon/icon_sound.svg');
+
+  background-color: $color_dark;
+}
+
+.icon_discord {
+  background-image: url('../img/regular/icon/icon_discord.svg');
+}
+
+.icon_burger {
+  mask-image: url('../img/regular/icon/icon_burger.svg');
+
+  background-color: $color_light;
+}
+
+.icon_close {
+  mask-image: url('../img/regular/icon/icon_close.svg');
+
+  background-color: $color_light;
+}
+
+.icon_twitter {
+  background-image: url('../img/regular/icon/icon_twitter.svg');
+}
+
+.icon_coffin_common {
+  background-image: url('../img/regular/icon/icon_coffin_common.png');
+  background-size: contain;
+}
+
+.icon_coffin_uncommon {
+  background-image: url('../img/regular/icon/icon_coffin_uncommon.png');
+  background-size: contain;
+}
+
+.icon_coffin_rare {
+  background-image: url('../img/regular/icon/icon_coffin_rare.png');
+  background-size: contain;
+}
+
+.icon_coffin_epic {
+  background-image: url('../img/regular/icon/icon_coffin_epic.png');
+  background-size: contain;
+}
+
+.icon_coffin_legendary {
+  background-image: url('../img/regular/icon/icon_coffin_legendary.png');
+  background-size: contain;
+}

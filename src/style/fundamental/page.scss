@@ -1,0 +1,78 @@
+.page {
+  position: relative;
+
+  &_overflow {
+    overflow: hidden;
+
+    // height: 100vh;
+
+    height: 100%;
+    min-height: 550px;
+  }
+
+  &__welcome {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+  }
+  &_theme {
+    color: $font_color;
+    // background: $background_main;
+
+    background-color: $color_dark;
+
+    font: 16px / 1.3333334 'Poppins', sans-serif;
+    &:after {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+
+      width: 100%;
+      height: 100%;
+
+      content: '';
+
+      background-image: linear-gradient(
+          to right,
+          $color_blue 2px,
+          transparent 2px
+        ),
+        linear-gradient(to bottom, $color_blue 2px, transparent 2px);
+      background-size: 50px 50px;
+
+      @include bp1440-block() {
+        left: 50%;
+
+        width: 1440px;
+
+        transform: translateX(-50%);
+
+        background-size: 90px 90px;
+      }
+    }
+    @include bp994-block() {
+      font-size: 30px;
+      line-height: 1.3333334;
+    }
+  }
+  &__header {
+    position: relative;
+    z-index: 5;
+
+    background-color: $color_dark;
+  }
+
+  &__footer {
+    position: relative;
+    z-index: 1;
+
+    background-color: $color_dark;
+  }
+}

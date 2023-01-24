@@ -1,0 +1,88 @@
+{% set inject = { layoutClass: "page page_theme layout deco page_overflow"} %}
+{% extends "layout/layout.njk" %}
+{% block main %}
+    {% include "section/welcome-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box'
+    }%}
+    {% include "section/header-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box'
+    }%}
+    {% include "section/super-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot deco__spot__collection',
+    sectionTitle: 'The collection',
+    scrollTo: 'collection'
+    }%}
+    {% include "section/collection-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot deco__spot__roadmap_1',
+    sectionTitle: 'Roadmap',
+    scrollTo: 'roadmap'
+    }%}
+    {% include "section/roadmap-1-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot deco__spot__roadmap_2',
+    sectionTitle: ''
+    }%}
+    {% include "section/roadmap-2-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot deco__spot__roadmap_3',
+    sectionTitle: ''
+    }%}
+    {% include "section/roadmap-3-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot deco__spot__roadmap_4',
+    sectionTitle: ''
+    }%}
+    {% include "section/roadmap-4-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot deco__spot__rarity' ,
+    sectionTitle: 'Rarity & Utility',
+    scrollTo: 'rarity'
+    }%}
+    {% include "section/rarity-section.njk" %}
+    {% set inject = {
+    wrapper: 'flat',
+    sectionBox: 'section__box layout__offset deco__spot' ,
+    sectionTitle: 'Faq'
+    }%}
+    {% include "section/faq-section.njk" %}
+    <!--  Footer -->
+    {% include "component/footer/footer.njk" %}
+    <!--  Footer END-->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+    <!-- <br> -->
+{% endblock main %}
